@@ -1,6 +1,6 @@
 # Amazon Vine Analysis
 ## Purpose and Overview
-Ratings data for luggage purchases on Amazon were analyzed to determine if any bias towards favorable reviews exists for paid members of the Amazon Vine program compared to unpaid reviews.  Two sets of deliverables were requested:
+Ratings data for luggage purchases on Amazon for the US marketplace were analyzed to determine if any bias towards favorable reviews exists for paid members of the Amazon Vine program compared to unpaid reviews.  Two sets of deliverables were requested:
 
 **Deliverable 1-**
 Perform ETL on Amazon product reviews by creating four tables/dataframes from the dataset and uploading each as four separate tables into pgAdmin.  The four tables included:
@@ -44,4 +44,6 @@ There were 10 5-star Vine reviews and 3,448 5-star non-Vine reviews for luggage 
 
 
 ## Summary
+These data show that there is no bias towards favorable reviews for luggage from Vine members based on 47.6% of 5-star ratings from Vine reviewers and 51.5% of 5-star ratings from non-Vine reviewers.  
 
+It is recommended that a bar chart be produced on the distribution of reviews (1-5) from Vine members and  non-Vine reviewers in order to review the distribution of ratings for each category of reviewer. These data can then be subjected to a Welch's 2-sample t-test, which is appropriate for Likert scale data, to determine if differences occur between the overall means for each group.  If sample size is a confounding factor (noting the 21 Vine reviews total), then a Mann-Whitney test for nonparametric data can be substituted.
